@@ -1,4 +1,4 @@
-@all
+
 Feature: User login with parameters
   Agile Story: user should be abe to login with two different credentials as student and librarian
 
@@ -14,7 +14,7 @@ Feature: User login with parameters
     Then books should be displayed
 
 
-
+@librarian
   Scenario: User login as librarian13 with parameters
 
     When user enters librarian username as "librarian13@library"

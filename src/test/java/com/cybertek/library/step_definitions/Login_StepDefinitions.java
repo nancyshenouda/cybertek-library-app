@@ -5,7 +5,6 @@ import com.cybertek.library.pages.LoginPage;
 import com.cybertek.library.utilities.BrowserUtil;
 import com.cybertek.library.utilities.Driver;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -13,6 +12,7 @@ import org.junit.Assert;
 public class Login_StepDefinitions {
     LoginPage object = new LoginPage();
     LandingPage landing = new LandingPage();
+
 
     @When("user enters {string} as username and {string} as password")
     public void user_enters_as_username_and_as_password(String username, String password) {
@@ -36,11 +36,7 @@ public class Login_StepDefinitions {
 
     }
 
-    @Given("user is on the login page")
-    public void user_is_on_the_login_page() {
-        Driver.getDriver().get("http://library2.cybertekschool.com/");
-        System.out.println("User is on the login page");
-    }
+
     @When("user enters the student correct username")
     public void user_enters_the_student_correct_username() {
     object.username.sendKeys("student11@library");
@@ -109,8 +105,5 @@ object.username.sendKeys("librarian18@library");
         Driver.closeDriver();
 
     }
-
-
-
 
 }

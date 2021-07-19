@@ -1,4 +1,4 @@
-@all
+
 Feature:
   Agile Story: User should be able to login with user name and password
   using two different user accounts Student and Librarian
