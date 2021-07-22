@@ -1,7 +1,7 @@
 Feature:
   As a user, I should be able to login with different users using their correct emails and passwords.
   when I login, I should be able to see username in the account username section.
-@wip
+
   @ScenarioOutline
   Scenario Template: logging in with different <username>
     Given user is on the login page
